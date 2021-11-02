@@ -27,11 +27,7 @@ namespace WeatherApp
             day4Label.Text = DateTime.Now.AddDays(4).ToString("dd, MMM, yyyy");
             day5Label.Text = DateTime.Now.AddDays(5).ToString("dd, MMM, yyyy");
 
-            temp1Label.Text = Form1.days[1].currentTemp + "°C";
-            temp2Label.Text = Form1.days[2].currentTemp + "°C";
-            temp3Label.Text = Form1.days[3].currentTemp + "°C";
-            temp4Label.Text = Form1.days[4].currentTemp + "°C";
-            temp5Label.Text = Form1.days[5].currentTemp + "°C";
+
             #endregion
         }
 

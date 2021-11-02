@@ -35,11 +35,6 @@ namespace WeatherApp
             this.day3Label = new System.Windows.Forms.Label();
             this.day4Label = new System.Windows.Forms.Label();
             this.day5Label = new System.Windows.Forms.Label();
-            this.temp1Label = new System.Windows.Forms.Label();
-            this.temp2Label = new System.Windows.Forms.Label();
-            this.temp3Label = new System.Windows.Forms.Label();
-            this.temp4Label = new System.Windows.Forms.Label();
-            this.temp5Label = new System.Windows.Forms.Label();
             this.max1Output = new System.Windows.Forms.Label();
             this.min1Output = new System.Windows.Forms.Label();
             this.max2Output = new System.Windows.Forms.Label();
@@ -124,66 +119,6 @@ namespace WeatherApp
             this.day5Label.TabIndex = 11;
             this.day5Label.Text = "Today";
             this.day5Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // temp1Label
-            // 
-            this.temp1Label.AutoSize = true;
-            this.temp1Label.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temp1Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.temp1Label.Location = new System.Drawing.Point(14, 42);
-            this.temp1Label.Name = "temp1Label";
-            this.temp1Label.Size = new System.Drawing.Size(44, 45);
-            this.temp1Label.TabIndex = 12;
-            this.temp1Label.Text = "0";
-            this.temp1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // temp2Label
-            // 
-            this.temp2Label.AutoSize = true;
-            this.temp2Label.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temp2Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.temp2Label.Location = new System.Drawing.Point(14, 122);
-            this.temp2Label.Name = "temp2Label";
-            this.temp2Label.Size = new System.Drawing.Size(44, 45);
-            this.temp2Label.TabIndex = 13;
-            this.temp2Label.Text = "0";
-            this.temp2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // temp3Label
-            // 
-            this.temp3Label.AutoSize = true;
-            this.temp3Label.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temp3Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.temp3Label.Location = new System.Drawing.Point(14, 205);
-            this.temp3Label.Name = "temp3Label";
-            this.temp3Label.Size = new System.Drawing.Size(44, 45);
-            this.temp3Label.TabIndex = 14;
-            this.temp3Label.Text = "0";
-            this.temp3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // temp4Label
-            // 
-            this.temp4Label.AutoSize = true;
-            this.temp4Label.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temp4Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.temp4Label.Location = new System.Drawing.Point(14, 288);
-            this.temp4Label.Name = "temp4Label";
-            this.temp4Label.Size = new System.Drawing.Size(44, 45);
-            this.temp4Label.TabIndex = 15;
-            this.temp4Label.Text = "0";
-            this.temp4Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // temp5Label
-            // 
-            this.temp5Label.AutoSize = true;
-            this.temp5Label.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temp5Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.temp5Label.Location = new System.Drawing.Point(14, 374);
-            this.temp5Label.Name = "temp5Label";
-            this.temp5Label.Size = new System.Drawing.Size(44, 45);
-            this.temp5Label.TabIndex = 16;
-            this.temp5Label.Text = "0";
-            this.temp5Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // max1Output
             // 
@@ -320,11 +255,6 @@ namespace WeatherApp
             this.Controls.Add(this.max2Output);
             this.Controls.Add(this.min1Output);
             this.Controls.Add(this.max1Output);
-            this.Controls.Add(this.temp5Label);
-            this.Controls.Add(this.temp4Label);
-            this.Controls.Add(this.temp3Label);
-            this.Controls.Add(this.temp2Label);
-            this.Controls.Add(this.temp1Label);
             this.Controls.Add(this.day5Label);
             this.Controls.Add(this.day4Label);
             this.Controls.Add(this.day3Label);
@@ -346,11 +276,6 @@ namespace WeatherApp
         private System.Windows.Forms.Label day3Label;
         private System.Windows.Forms.Label day4Label;
         private System.Windows.Forms.Label day5Label;
-        private System.Windows.Forms.Label temp1Label;
-        private System.Windows.Forms.Label temp2Label;
-        private System.Windows.Forms.Label temp3Label;
-        private System.Windows.Forms.Label temp4Label;
-        private System.Windows.Forms.Label temp5Label;
         private System.Windows.Forms.Label max1Output;
         private System.Windows.Forms.Label min1Output;
         private System.Windows.Forms.Label max2Output;

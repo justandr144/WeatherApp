@@ -41,12 +41,9 @@ namespace WeatherApp
                 newDay.date = reader.GetAttribute("day");
 
                 reader.ReadToFollowing("temperature");
-                newDay.tempLow = reader.GetAttribute("min");
-                newDay.tempHigh = reader.GetAttribute("max");
-                newDay.currentTemp = reader.GetAttribute("value");
+                newDay.tempLow = Convert.ToDouble(reader.GetAttribute("min"));
+                newDay.tempHigh = Convert.ToDouble(reader.GetAttribute("max"));
 
-                reader.ReadToFollowing("weather");
-                newDay.condition = reader.GetAttribute("value");
 
                 //TODO: if day object not null add to the days list
                 days.Add(newDay);
@@ -65,7 +62,12 @@ namespace WeatherApp
             days[0].location = reader.GetAttribute("name");
 
             reader.ReadToFollowing("temperature");
-            days[0].currentTemp = reader.GetAttribute("value");
+            days[0].currentTemp = Convert.ToDouble(reader.GetAttribute("value"));
+
+            reader.ReadToFollowing("weather");
+            days[0].condition = reader.GetAttribute("number");
+
+
 
         }
     }

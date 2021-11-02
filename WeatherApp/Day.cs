@@ -8,11 +8,11 @@ namespace WeatherApp
 {
     public class Day
     {
-        public string date, currentTime, condition, location, windSpeed, windDirection, precipitation, visibility;
+        public string date, currentTime, condition, location, windSpeed, windDirection, precipitation, visibility, foreCond;
         public double currentTemp, tempHigh, tempLow;
         public Day()
         {
-            date =  currentTime = condition = location = windSpeed = windDirection = precipitation = visibility = "";
+            date =  currentTime = condition = location = windSpeed = windDirection = precipitation = visibility = foreCond = "";
         }
     }
 }

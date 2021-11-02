@@ -28,19 +28,41 @@ namespace WeatherApp
 
             int climate = Convert.ToInt32(Form1.days[0].condition);
 
-            climate = 200;
-
-            if (climate > 199 && climate < 300)
+            if (climate > 199 && climate < 300)     //Choose icon, background, and weather title
             {
                 conditionLabel.Text = "Thunderstorm";
                 this.BackgroundImage = Properties.Resources.cloudyBackImage;
                 iconBox.Image = Properties.Resources.thunderIcon;
             }
+            else if (climate > 300 && climate < 600)
+            {
+                conditionLabel.Text = "Rain";
+                this.BackgroundImage = Properties.Resources.cloudyBackImage;
+                iconBox.Image = Properties.Resources.rainIcon;
+            }
+            else if (climate > 600 && climate < 700)
+            {
+                conditionLabel.Text = "Snow";
+                this.BackgroundImage = Properties.Resources.cloudyBackImage;
+                iconBox.Image = Properties.Resources.snowIcon;
+            }
+            else if (climate == 800)
+            {
+                conditionLabel.Text = "Clear";
+                this.BackgroundImage = Properties.Resources.sunnyBackImage;
+                iconBox.Image = Properties.Resources.sunIcon;
+            }
+            else if (climate > 800)
+            {
+                conditionLabel.Text = "Cloudy";
+                this.BackgroundImage = Properties.Resources.sunnyBackImage;
+                iconBox.Image = Properties.Resources.cloudIcon;
+            }
 
             dateOutput.Text = DateTime.Now.ToString("dd, MMM, yyyy");
         }
 
-        private void nextLabel_Click(object sender, EventArgs e)
+        private void nextLabel_Click(object sender, EventArgs e)    //go to forecast screen
         {
             Form f = this.FindForm();
             f.Controls.Remove(this);

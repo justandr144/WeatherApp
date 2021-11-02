@@ -154,6 +154,7 @@ namespace WeatherApp
             this.Controls.Add(this.minOutput);
             this.Controls.Add(this.tempLabel);
             this.Controls.Add(this.cityOutput);
+            this.DoubleBuffered = true;
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(300, 550);
             ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();
